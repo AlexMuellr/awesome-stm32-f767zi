@@ -5,10 +5,16 @@
 // Default mock implementation of the API callbacks
 
 #include "mongoose_glue.h"
+#include "stm32f7xx_hal.h"
 static struct leds s_leds = {false};
 void glue_get_leds(struct leds *data) {
   *data = s_leds;  // Sync with your device
 }
 void glue_set_leds(struct leds *data) {
   s_leds = *data; // Sync with your device
+  if(data->led1) {
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_SET);
+  } else {
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_RESET);
+  }
 }
