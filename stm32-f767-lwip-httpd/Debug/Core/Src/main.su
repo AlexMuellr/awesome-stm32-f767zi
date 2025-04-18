@@ -1,0 +1,10 @@
+../Core/Src/main.c:96:13:LED_CGI_HANDLER	32	static
+../Core/Src/main.c:123:6:MY_CGI_INIT	8	static
+../Core/Src/main.c:131:7:MY_SSI_HANDLER	88	static
+../Core/Src/main.c:161:6:MY_SSI_INIT	8	static
+../Core/Src/main.c:171:5:main	8	static
+../Core/Src/main.c:222:6:SystemClock_Config	88	static
+../Core/Src/main.c:280:13:MX_USART3_UART_Init	8	static
+../Core/Src/main.c:315:13:MX_USB_OTG_FS_PCD_Init	8	static
+../Core/Src/main.c:350:13:MX_GPIO_Init	56	static
+../Core/Src/main.c:417:6:Error_Handler	4	static,ignoring_inline_asm
